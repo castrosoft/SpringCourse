@@ -24,6 +24,7 @@ public class IndexController {
         User user = new User();
         user.setName("Pedro");
         user.setSurname("Castro");
+        user.setEmail("cp.castropedro@gmail.com");
         model.addAttribute("user", user);
         model.addAttribute("titulo", "User's profile: ".concat(user.getName()));
 

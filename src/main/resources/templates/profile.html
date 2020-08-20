@@ -9,10 +9,8 @@
 <span th:text="${user.name}"></span>
 <span th:text="${user.surname}"></span>
 
-<span th:if="${user.email}" th:text="${user.email}"></span>
 <br>
+<span th:if="${user.email}" th:text="${user.email}"></span>
 <span th:if="${user.email == null}" th:text="'The user does not have a email'"></span>
-<!-- <span th:if="${user.email == null}" "> The user does not have a email </span>
-
 </body>
 </html>

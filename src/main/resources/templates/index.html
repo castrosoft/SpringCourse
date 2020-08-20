@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hola Spring</title>
+    <title th:text="${titulo}"></title>
 </head>
 <body>
-<h1>Hola Spring!</h1>
-
+<h1 th:text="${titulo}"></h1>
 </body>
 </html>

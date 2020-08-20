@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.Map;
 
@@ -19,9 +20,10 @@ public class IndexController {
     @GetMapping("/index")
     //@GetMapping({"/index", "/", "/home"})
     //@PostMapping(value="/index")
-    public String index(Map<String, Object> map){
+    public ModelAndView index(ModelAndView mv){
 
-        map.put("titulo", "Hola Spring FrameWork con Map");
-        return "index";
+        mv.addObject("titulo", "Hola Spring FrameWork con ModelAndView");
+        mv.setViewName("index");
+        return mv;
     }
 }

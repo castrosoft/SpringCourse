@@ -1,5 +1,6 @@
 package com.example.spring.demo.controllers;
 
+import com.example.spring.demo.models.services.IndexInterface;
 import com.example.spring.demo.models.services.IndexService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -15,7 +16,7 @@ public class IndexController {
     //private IndexService myService = new IndexService();
 
     @Autowired
-    private IndexService myService;
+    private IndexInterface myService;
 
     @GetMapping({"/index", "/", "/home"})
     public String index(Model model){

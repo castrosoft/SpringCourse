@@ -2,7 +2,7 @@ package com.example.spring.demo.models.services;
 
 import org.springframework.stereotype.Component;
 
-@Component("myComplexService")
+//@Component("myComplexService")
 public class Index2Services implements IndexInterface {
 
     @Override

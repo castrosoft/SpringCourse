@@ -3,8 +3,8 @@ package com.example.spring.demo.models.services;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-@Component("mySimpleService")
-@Primary
+//@Component("mySimpleService")
+//@Primary
 public class IndexService implements IndexInterface{
 
     @Override

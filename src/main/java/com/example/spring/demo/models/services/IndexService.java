@@ -1,6 +1,8 @@
 package com.example.spring.demo.models.services;
 
+import org.springframework.stereotype.Component;
 
+@Component
 public class IndexService {
 
     public String operation(){

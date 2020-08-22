@@ -1,6 +1,7 @@
 package com.example.spring.demo.controllers;
 
 import com.example.spring.demo.models.services.IndexService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,8 +12,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class IndexController {
 
-    private IndexService myService = new IndexService();
+    //private IndexService myService = new IndexService();
 
+    @Autowired
+    private IndexService myService;
 
     @GetMapping({"/index", "/", "/home"})
     public String index(Model model){
